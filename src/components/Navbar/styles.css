@@ -1,0 +1,15 @@
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(5, 5, 102);
+}
+
+.top-links {
+    color: rgb(150, 150, 150);
+}
+
+.nav-link {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(2, 11, 92);
+    font-weight: 800; 
+}
