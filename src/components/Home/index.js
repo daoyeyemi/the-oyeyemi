@@ -40,12 +40,14 @@ const Home = () => {
                     <BsChevronDoubleDown style={{ fontSize: '60px' }} />
                 </div>
                 <section style={{ marginBottom: '30px' }}>
-                    <div className='col-md-6' style={{ display: 'inline-block', float: 'left' }}>
+                    <div className='col-md-6' style={{ display: 'inline-block', marginBottom: '25px', textAlign: 'center' }}>
                         <img src={salad} height='100%' width='100%' />
                     </div>
-                    <div className='col-md-6' style={{ display: 'inline-block', float: 'right' }}>
-                        <h3>Our Menus</h3>
-                        <p>Our creative, elevated food and beverage program combines satisfying staples with imaginative twists. From boozy brunches and happy hours to family dinners, special occasions and everything in between, The Original has something for everyone.</p>
+                    <div className='col-md-6' style={{ float: 'right', textAlign: 'center' }}> 
+                        <div style={{ width: '80%', display: 'inline-block', textAlign: 'center', border: '2px solid navy', borderRadius: '5px', height: '100%', marginLeft: '20px', marginRight: '20px' }}>
+                            <h3 style={{ marginTop: '25px', paddingTop: '25px', textAlign: 'center'}}>Our Menus</h3>
+                            <p style={{ paddingTop: '20px', paddingLeft: '50px', paddingRight: '50px', paddingBottom: '20px' }}>Our creative, elevated food and beverage program combines satisfying staples with imaginative twists. From boozy brunches and happy hours to family dinners, special occasions and everything in between, The Original has something for everyone.</p>
+                        </div>
                     </div>
                 
                 </section>
