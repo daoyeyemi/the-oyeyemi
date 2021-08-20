@@ -4,6 +4,16 @@ import './styles.css'
 import { BsFillDiamondFill, BsChevronDoubleDown } from "react-icons/bs"
 import salad from "./salad.jpg"
 import pizza from "./pizza.jpg"
+import pasta from "./pasta.jpg"
+
+import fries from "./fries.jpg"
+import pasta1 from "./pasta.jpg"
+import dining from "./dining.jpg"
+import dining1 from "./dining1.jpg"
+import pasta2 from "./pasta2.jpg"
+import wings from "./wings.jpg"
+import burgers from "./burgers.jpg"
+import icecream from "./icecream.jpg"
 
 const Home = () => {
     return (
@@ -97,7 +107,7 @@ const Home = () => {
                 </div>    
                 <div className='col-md-12'>
                     <div style={{
-                        backgroundImage: `url(${pizza})`,
+                        backgroundImage: `url(${pasta})`,
                         backgroundRepeat: 'no-repeat',
                         backgroundAttachment: 'fixed',
                         backgroundPosition: 'center',
@@ -107,7 +117,21 @@ const Home = () => {
                     </div>
                     <p style={{ textAlign: 'center', marginBottom: '30px'}}> Follow us @davidoyeyem1 </p>
                 </div>
-
+                <div className="outer-grid" style={{ textAlign: 'center', display: 'flex', flexWrap: 'wrap', padding: '0 2px' }}>
+                    <div className="inner-grid" style={{ flex: '25%', maxWidth: '50%' }}>
+                        <img src={pasta1} style={{ width: '100%' }}></img>
+                        <img src={burgers} style={{ width: '100%' }}></img>
+                        <img src={icecream} style={{ width: '100%' }}></img>
+                        <img src={dining1} style={{ width: '100%' }}></img>
+                    </div>
+                    <div className="inner-grid" style={{ flex: '25%', maxWidth: '50%' }}>
+                        <img src={dining} style={{ width: '100%' }}></img>
+                        <img src={fries} style={{ width: '100%' }}></img>
+                        <img src={pasta2} style={{ width: '100%' }}></img>
+                        <img src={wings} style={{ width: '100%' }}></img>
+                    </div>
+                </div>
+                
             </div>
         </>
     )
