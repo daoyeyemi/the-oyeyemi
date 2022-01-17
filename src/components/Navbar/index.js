@@ -5,6 +5,7 @@ import { Link, Route, Switch } from "react-router-dom"
 import Home from "components/Home"
 import HoursLocations from "components/H&L"
 import Menus from "components/Menus"
+import OrderMeal from "components/OrderMeal"
 import Orders from "components/Orders"
 import React from 'react'
 import Reservations from "components/Reservations"
@@ -24,14 +25,6 @@ const Navbar = () => {
                 <Link to={'/orders'} className="nav-link">Orders</Link>
                 <Link to={'/reservations'} className="nav-link">Reservations</Link>
             </nav>
-
-            <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path={'/hours&location'} component={HoursLocations} />
-                <Route path={'/menu'} component={Menus} />
-                <Route path={'/orders'} component={Orders} />
-                <Route path={'/reservations'} component={Reservations} />
-            </Switch>
         </>
     )
 }
