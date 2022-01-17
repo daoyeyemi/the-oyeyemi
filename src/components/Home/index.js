@@ -1,19 +1,20 @@
-import React from 'react'
-import plate from './big_food.png'
 import './styles.css'
-import { BsFillDiamondFill, BsChevronDoubleDown } from "react-icons/bs"
-import salad from "./salad.jpg"
-import pizza from "./pizza.jpg"
-import pasta from "./pasta.jpg"
 
-import fries from "./fries.jpg"
-import pasta1 from "./pasta.jpg"
+import { BsChevronDoubleDown, BsFillDiamondFill } from "react-icons/bs"
+
+import React from 'react'
+import burgers from "./burgers.jpg"
 import dining from "./dining.jpg"
 import dining1 from "./dining1.jpg"
-import pasta2 from "./pasta2.jpg"
-import wings from "./wings.jpg"
-import burgers from "./burgers.jpg"
+import fries from "./fries.jpg"
 import icecream from "./icecream.jpg"
+import pasta from "./pasta.jpg"
+import pasta1 from "./pasta.jpg"
+import pasta2 from "./pasta2.jpg"
+import pizza from "./pizza.jpg"
+import plate from './big_food.png'
+import salad from "./salad.jpg"
+import wings from "./wings.jpg"
 
 const Home = () => {
     return (
@@ -67,18 +68,18 @@ const Home = () => {
                         </div>
                     </section>
                     <div className='col-md-4' style={{ marginTop : '7px', marginBottom: '7px' }}>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
+                        <div className="d-grid gap-2">
+                            <button className="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
                         </div>
                     </div>
                     <div className='col-md-4' style={{ marginTop : '7px', marginBottom: '7px' }}>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
+                        <div className="d-grid gap-2">
+                            <button className="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
                         </div>
                     </div>
                     <div className='col-md-4' style={{ marginTop : '7px', marginBottom: '7px' }}>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
+                        <div className="d-grid gap-2">
+                            <button className="btn btn-primary" type="button" style={{ padding: '20px' }}>Button</button>
                         </div>
                     </div>
                     <div className='col-md-3'></div>

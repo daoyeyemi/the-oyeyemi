@@ -8,4 +8,4 @@ const HoursLocations = () => {
     )
 }
 
-export default index
+export default HoursLocations;

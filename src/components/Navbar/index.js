@@ -1,5 +1,14 @@
-import React from 'react'
 import "./styles.css"
+
+import { Link, Route, Switch } from "react-router-dom"
+
+import Home from "components/Home"
+import HoursLocations from "components/H&L"
+import Menus from "components/Menus"
+import Orders from "components/Orders"
+import React from 'react'
+import Reservations from "components/Reservations"
+
 const Navbar = () => {
     return (
         <>
@@ -8,13 +17,21 @@ const Navbar = () => {
                 <a className="top-links" href="#">(111) 111-1111</a>
             </div>
             <nav style={{ display: "flex", justifyContent: "center" }}>
-                <a className="nav-link" href="#">Hours & Location</a>
-                <a className="nav-link" href="#">Menu</a>
-                <a className="nav-link" href="#">About Us</a>
-                <a className="nav-link" href="#">Events</a>
-                <a className="nav-link" href="#">Orders</a>
-                <a className="nav-link" href="#">Reservations</a>
+                <Link to={'/hours&location'} className="nav-link">Hours & Location</Link>
+                <Link to={'/menu'} className="nav-link">Menu</Link>
+                <Link to={'/about'} className="nav-link">About Us</Link>
+                <Link to={'/events'} className="nav-link">Events</Link>
+                <Link to={'/orders'} className="nav-link">Orders</Link>
+                <Link to={'/reservations'} className="nav-link">Reservations</Link>
             </nav>
+
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path={'/hours&location'} component={HoursLocations} />
+                <Route path={'/menu'} component={Menus} />
+                <Route path={'/orders'} component={Orders} />
+                <Route path={'/reservations'} component={Reservations} />
+            </Switch>
         </>
     )
 }
