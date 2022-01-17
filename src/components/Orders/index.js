@@ -59,9 +59,17 @@ const Orders = () => {
     ]
     
     return (
-        <div>
-            
-        </div>
+        <>
+            {meals.map((meal, index) => {
+                return (
+                    <div key={index}>
+                        <p>{meal.name}</p>
+                        <p>{meal.price}</p>
+                        <p>{meal.description}</p>
+                    </div>
+                )
+            })}
+        </>
     )
 }
 
