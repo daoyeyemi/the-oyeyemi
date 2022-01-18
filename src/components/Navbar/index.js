@@ -10,7 +10,8 @@ import Orders from "components/Orders"
 import React from 'react'
 import Reservations from "components/Reservations"
 
-const Navbar = () => {
+const Navbar = (props) => {
+    console.log(props)
     return (
         <>
             <div style={{ display: "flex", justifyContent: "center" }}>
